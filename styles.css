@@ -1,0 +1,68 @@
+.header-container {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+}
+
+.header-logo {
+    width:   64px; /* Adjust width as needed */
+    height: auto; /* Keep aspect ratio */
+    border-radius:  20px;
+}
+
+nav {
+    margin-left:  10px; /* Add space between the logo and the navigation */
+}
+
+nav ul {
+    display: flex;
+    gap:   10px; /* Space between buttons */
+    list-style-type: none; /* Remove bullets */
+}
+
+
+nav ul li a {
+    display: inline-block;
+    padding:  10px  20px; /* Increase padding to make buttons larger */
+    background-color: #0a0a23; /* Set a background color */
+    color: white; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    border-radius:  20px; /* Optional: rounded corners */
+    transition: background-color  0.3s ease; /* Smooth hover effect */
+    cursor: pointer;
+    z-index: 1000;
+}
+
+nav ul li a:hover {
+    background-color: #535362; /* Darken background on hover */
+}
+
+.header-bar {
+    position: sticky;
+    top: 0;
+    background-color: #19436a; /* Example of Royal Blue */
+    padding:  10px  20px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Keeps the header bar at the top of the viewport */
+    top:  0;
+    width: 384px;
+    height: 96px;
+    border-end-end-radius: 50px;
+    z-index: 10; /* Ensures the header bar stays on top of other content */
+    display: inline-block;
+}
+.header-separator {
+    position: fixed; /* Fixes the position of the separator */
+    top:   0; /* Positions it at the top of the page */
+    left:   0; /* Starts from the left edge */
+    right:   0; /* Spans the full width of the page */
+    height:   96px; /* Sets the height of the separator */
+    background-color: #112e49; /* Sets the background color */
+    z-index:   1; /* Ensures the separator stays on top of other content */
+    display: inline-block;
+}
+
+
+
+
+
